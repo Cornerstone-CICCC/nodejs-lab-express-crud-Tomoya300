@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <div class="title">
+                <h1>Employees</h1>
+            </div>
+            <div class="list-box">
+                <h2>List of Employees</h2>
+                <ul></ul>
+                <form class="search-form">
+                    <input type="text" id="search" name="search" placeholder="Enter first name...">
+                    <button>Search and View Employees</button>
+                </form>
+            </div>
+            <div class="add-box">
+                <h2>Add Employee</h2>
+                <form class="add-form">
+                    <input type="text" id="add-fname" name="add-firstname" placeholder="First name">
+                    <input type="text" id="add-lname" name="add-lastname" placeholder="Last name">
+                    <input type="text" id="add-age" name="add-age" placeholder="Age">
+                    <input type="checkbox" id="add-married" name="add-married">
+                    <label for="married">Married?</label>
+                    <button class="add-btn">Add Employee</button>
+                </form>
+            </div>
+            <div class="edit-box">
+                <h2>Edit Employee</h2>
+                <form class="edit-form">
+                    <input type="text" id="edit-fname" name="edit-firstname" placeholder="First name" required>
+                    <input type="text" id="edit-lname" name="edit-lastname" placeholder="Last name" required>
+                    <input type="text" id="edit-age" name="edit-age" placeholder="Age" required>
+                    <input type="checkbox" id="edit-married" name="edit-married">
+                    <label for="married">Married?</label>
+                    <button class="edit-btn">Edit Employee</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <h2>View Employee/s Info</h2>
+            <div class="view-box"></div>
+        </div>
+    </main>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
